@@ -1,14 +1,235 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>ERA Studio | 3D Портфолио</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Model Viewer -->
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <!-- ═══════════════════════════════════════════
+       ОСНОВНЫЕ SEO МЕТА-ТЕГИ
+  ════════════════════════════════════════════ -->
+  <title>ERA Studio — Веб-разработка: лендинги, сайты, интернет-магазины</title>
+  <meta name="description" content="ERA Studio — студия веб-разработки. Создаём лендинги, сайты-визитки, корпоративные сайты и интернет-магазины. 50+ проектов, современные технологии, фокус на конверсию. Узнайте стоимость.">
+  <meta name="keywords" content="веб-разработка, создание сайтов, лендинг, сайт под ключ, интернет-магазин, корпоративный сайт, ERA Studio">
+  <meta name="author" content="ERA Studio">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#000000">
+  <link rel="canonical" href="https://erastudio.ru/">
+
+  <!-- ═══════════════════════════════════════════
+       OPEN GRAPH (Facebook, VK, Telegram, WhatsApp)
+  ════════════════════════════════════════════ -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://erastudio.ru/">
+  <meta property="og:title" content="ERA Studio — Студия веб-разработки">
+  <meta property="og:description" content="Создаём веб-продукты, которые работают. От стратегии до запуска — лендинги, сайты, интернет-магазины. 50+ реализованных проектов.">
+  <meta property="og:image" content="https://erastudio.ru/img/og-preview.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ERA Studio — Студия веб-разработки">
+  <meta property="og:site_name" content="ERA Studio">
+  <meta property="og:locale" content="ru_RU">
+
+  <!-- ═══════════════════════════════════════════
+       TWITTER CARD
+  ════════════════════════════════════════════ -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ERA Studio — Студия веб-разработки">
+  <meta name="twitter:description" content="Создаём веб-продукты, которые работают. Лендинги, сайты, интернет-магазины. 50+ проектов.">
+  <meta name="twitter:image" content="https://erastudio.ru/img/og-preview.jpg">
+
+  <!-- ═══════════════════════════════════════════
+       FAVICONS
+  ════════════════════════════════════════════ -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- ═══════════════════════════════════════════
+       МИКРОРАЗМЕТКА SCHEMA.ORG (JSON-LD)
+  ════════════════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://erastudio.ru/#website",
+        "url": "https://erastudio.ru/",
+        "name": "ERA Studio",
+        "description": "Студия веб-разработки — лендинги, сайты, интернет-магазины",
+        "inLanguage": "ru-RU",
+        "publisher": { "@id": "https://erastudio.ru/#organization" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://erastudio.ru/#webpage",
+        "url": "https://erastudio.ru/",
+        "name": "ERA Studio — Веб-разработка: лендинги, сайты, интернет-магазины",
+        "description": "ERA Studio — студия веб-разработки. Создаём лендинги, сайты-визитки, корпоративные сайты и интернет-магазины.",
+        "isPartOf": { "@id": "https://erastudio.ru/#website" },
+        "about": { "@id": "https://erastudio.ru/#organization" },
+        "inLanguage": "ru-RU"
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://erastudio.ru/#organization",
+        "name": "ERA Studio",
+        "alternateName": "ЕРА Студия",
+        "description": "Студия веб-разработки. Создаём лендинги, сайты-визитки, корпоративные сайты, интернет-магазины и CRM. Фокус на результате и конверсии.",
+        "url": "https://erastudio.ru/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://erastudio.ru/img/og-preview.jpg",
+          "width": 1200,
+          "height": 630
+        },
+        "sameAs": [
+          "https://t.me/erastudio",
+          "https://kwork.ru/user/erastudio",
+          "https://www.fl.ru/users/erastudio"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+7-999-123-45-67",
+          "contactType": "sales",
+          "availableLanguage": "Russian"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Услуги веб-разработки",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Landing Page",
+                "description": "Продающая одностраничная страница с дизайном, вёрсткой, формами заявок и SEO-базой"
+              },
+              "price": "35000",
+              "priceCurrency": "RUB",
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "minPrice": "35000",
+                "priceCurrency": "RUB"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Сайт-визитка",
+                "description": "Представительский сайт компании в сети"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Корпоративный сайт",
+                "description": "Многостраничный сайт для бизнеса"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Интернет-магазин",
+                "description": "E-commerce решение с каталогом, корзиной и оплатой"
+              }
+            }
+          ]
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "ratingCount": "50"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://erastudio.ru/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Сколько стоит разработка сайта?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Стоимость зависит от типа проекта. Landing Page — от 35 000 рублей, сайт-визитка — от 25 000 рублей, корпоративный сайт — от 80 000 рублей, интернет-магазин — от 120 000 рублей. Точную стоимость рассчитаем после обсуждения вашего проекта."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Сколько времени занимает разработка?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Landing Page создаём за 10–14 рабочих дней. Сайт-визитка — 14–21 день. Корпоративный сайт — 30–45 дней. Сроки согласовываются индивидуально при обсуждении проекта."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Какие технологии вы используете?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Мы работаем с современным стеком: React, TypeScript, Next.js, Node.js, FastAPI, а также с классическими HTML/CSS/JS решениями. Выбор технологий определяется задачами проекта."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://erastudio.ru/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Главная",
+            "item": "https://erastudio.ru/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- ═══════════════════════════════════════════
+       PRECONNECT & PERFORMANCE
+  ════════════════════════════════════════════ -->
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="preconnect" href="https://img.icons8.com">
+  <link rel="dns-prefetch" href="https://unpkg.com">
+
+  <!-- Google Model Viewer — defer для ускорения FCP -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js" defer></script>
 
     <style>
+  /* Skip navigation link for accessibility */
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #ffffff;
+    color: #000000;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    z-index: 99999;
+    transition: top 0.3s;
+  }
+  .skip-link:focus {
+    top: 0;
+  }
+
+  /* Logo text as anchor */
+  a.logo-text {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
         * {
             margin: 0;
             padding: 0;
@@ -2084,10 +2305,11 @@
         }
 
         .contact-icon {
-            width: 16px;
-            height: 16px;
-            margin-top: 3px;
-            filter: brightness(0) invert(0.6);
+            width: 18px;
+            height: 18px;
+            min-width: 18px;
+            margin-top: 2px;
+            flex-shrink: 0;
         }
 
         .contact-link {
@@ -5278,6 +5500,7 @@
 }
     </style>
 </head>
+<a href="#main-content" class="skip-link">Перейти к содержимому</a>
 <body>
 
   <!-- Лоадер -->
@@ -5296,7 +5519,7 @@
   </div>
 
   <!-- Шапка -->
-  <div class="header" id="header">
+  <header class="header" id="header" role="banner">
     <div class="header-content">
       <div class="logo">
         <div class="logo-text">ERA STUDIO</div>
@@ -5311,9 +5534,9 @@
         </a>
       </nav>
     </div>
-  </div>
+  </header>
   
-    <div class="obertka">
+  <div class="obertka">
       <!-- Текстовая панель -->
       <div class="text-panel">
         <h1>СТУДИЯ ВЕБ-РАЗРАБОТКИ</h1>
@@ -5391,7 +5614,7 @@
         
         <!-- Заголовок раздела -->
         <div class="section-header fade-in">
-            <h1 class="section-title">О СТУДИИ</h1>
+            <h2 class="section-title">О СТУДИИ</h1>
         </div>
 
         <!-- Основной контент -->
@@ -5470,7 +5693,7 @@
         
         <!-- Заголовок раздела -->
         <div class="section-header">
-            <h1 class="section-title">НАШИ ПРОЕКТЫ</h1>
+            <h2 class="section-title">НАШИ ПРОЕКТЫ</h1>
             <p class="section-subtitle">
                 <span class="highlight">Цифровые решения</span>, которые меняют правила игры. 
                 Каждый проект — это уникальное сочетание дизайна, технологий и бизнес-логики.
@@ -5515,7 +5738,7 @@
                     <div class="project-card" data-project="2">
                         <div class="project-screenshot">
                             <div class="screenshot-container">
-                                <img src="img/photo_2026-02-18_13-06-40.jpg" 
+                                <img loading="lazy" src="img/photo_2026-02-18_13-06-40.jpg" 
                                      alt="Сайт производителя" 
                                      class="screenshot-image"
                                      data-scroll-speed="1">
@@ -5543,7 +5766,7 @@
                     <div class="project-card" data-project="3">
                         <div class="project-screenshot">
                             <div class="screenshot-container">
-                                <img src="img/photo_2026-02-18_13-06-39.jpg" 
+                                <img loading="lazy" src="img/photo_2026-02-18_13-06-39.jpg" 
                                      alt="Сайт архитектурного бюро" 
                                      class="screenshot-image"
                                      data-scroll-speed="1">
@@ -5571,7 +5794,7 @@
                     <div class="project-card" data-project="4">
                         <div class="project-screenshot">
                             <div class="screenshot-container">
-                                <img src="img/photo_2026-02-18_13-06-41.jpg" 
+                                <img loading="lazy" src="img/photo_2026-02-18_13-06-41.jpg" 
                                      alt="Сайт медицинского центра" 
                                      class="screenshot-image"
                                      data-scroll-speed="1">
@@ -5597,7 +5820,7 @@
                     <div class="project-card" data-project="5">
                         <div class="project-screenshot">
                             <div class="screenshot-container">
-                                <img src="img/photo_2026-02-18_13-06-36.jpg" 
+                                <img loading="lazy" src="img/photo_2026-02-18_13-06-36.jpg" 
                                      alt="Сайт медицинского центра" 
                                      class="screenshot-image"
                                      data-scroll-speed="1">
@@ -5622,7 +5845,7 @@
                     <!-- <div class="project-card" data-project="6">
                         <div class="project-screenshot">
                             <div class="screenshot-container">
-                                <img src="img/glavnaya_453x0_36b.png" 
+                                <img loading="lazy" src="img/glavnaya_453x0_36b.png" 
                                      alt="Сайт медицинского центра" 
                                      class="screenshot-image"
                                      data-scroll-speed="1">
@@ -5692,7 +5915,7 @@
         
         <!-- Заголовок раздела -->
         <div class="section-header">
-            <h1 class="section-title">НАШИ УСЛУГИ</h1>
+            <h2 class="section-title">НАШИ УСЛУГИ</h1>
             <!-- <p class="section-subtitle">
                 Полный цикл создания <span class="highlight">цифровых продуктов</span> — от идеи до запуска и поддержки
             </p> -->
@@ -5707,7 +5930,7 @@
                 <div class="card-front">
                     <div class="service-icon">
                         <div class="icon-shape">
-                            <img src="https://img.icons8.com/material-rounded/24/FFFFFF/rocket.png" alt="rocket"/>
+                            <img loading="lazy" src="https://img.icons8.com/material-rounded/24/FFFFFF/rocket.png" alt="rocket"/>
                         </div>
                     </div>
                     
@@ -5769,7 +5992,7 @@
                 <div class="card-front">
                     <div class="service-icon">
                         <div class="icon-shape">
-                            <img src="https://img.icons8.com/fluency-systems-filled/48/FFFFFF/graduation-cap.png" alt="graduation-cap"/>
+                            <img loading="lazy" src="https://img.icons8.com/fluency-systems-filled/48/FFFFFF/graduation-cap.png" alt="graduation-cap"/>
                         </div>
                     </div>
                     
@@ -5829,7 +6052,7 @@
                 <div class="card-front">
                     <div class="service-icon">
                         <div class="icon-shape">
-                            <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/FFFFFF/book-stack.png" alt="book-stack"/>
+                            <img loading="lazy" width="50" height="50" src="https://img.icons8.com/ios-filled/50/FFFFFF/book-stack.png" alt="book-stack"/>
                         </div>
                     </div>
                     
@@ -5889,7 +6112,7 @@
                 <div class="card-front">
                     <div class="service-icon">
                         <div class="icon-shape">
-                            <img src="https://img.icons8.com/material-rounded/24/FFFFFF/shopping-cart.png" alt="shopping-cart"/>
+                            <img loading="lazy" src="https://img.icons8.com/material-rounded/24/FFFFFF/shopping-cart.png" alt="shopping-cart"/>
                         </div>
                     </div>
                     
@@ -5949,7 +6172,7 @@
                 <div class="card-front">
                     <div class="service-icon">
                         <div class="icon-shape">
-                            <img  src="https://img.icons8.com/puffy-filled/32/FFFFFF/star.png" alt="star"/>
+                            <img loading="lazy"  src="https://img.icons8.com/puffy-filled/32/FFFFFF/star.png" alt="star"/>
                         </div>
                     </div>
                     
@@ -6011,7 +6234,7 @@
                 <div class="card-front">
                     <div class="service-icon">
                         <div class="icon-shape">
-                            <img src="https://img.icons8.com/sf-regular-filled/48/FFFFFF/gift.png" alt="gift"/>
+                            <img loading="lazy" src="https://img.icons8.com/sf-regular-filled/48/FFFFFF/gift.png" alt="gift"/>
                         </div>
                     </div>
                     
@@ -6081,7 +6304,7 @@
         
         <!-- Заголовок раздела -->
         <div class="section-header">
-            <h1 class="section-title">ОСТАВЬТЕ ЗАЯВКУ</h1>
+            <h2 class="section-title">ОСТАВЬТЕ ЗАЯВКУ</h1>
             <p class="section-subtitle">
                 Расскажите о вашем проекте, и мы <span class="highlight">подготовим индивидуальное предложение</span> в течение 24 часов
             </p>
@@ -6238,7 +6461,7 @@
         
         <!-- Заголовок раздела -->
         <div class="section-header">
-            <h1 class="section-title">FAQ</h1>
+            <h2 class="section-title">FAQ</h1>
             <p class="section-subtitle">
                 Ответы на <span class="highlight">часто задаваемые вопросы</span> о разработке сайтов
             </p>
@@ -6486,18 +6709,18 @@
                 <h3>Контакты</h3>
                 <div class="contact-info">
                 <div class="contact-item">
-                    <img src="data:image/svg+xml,%3Csvg xmlns='https://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23888888' d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.28-.02-.12.02-1.96 1.25-5.54 3.69-.52.36-1 .53-1.43.52-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.41-.89.03-.24.28-.49.76-.74 2.95-1.29 4.92-2.14 5.91-2.56 2.81-1.17 3.39-1.37 3.77-1.38.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .24z'/%3E%3C/svg%3E" 
-                        class="contact-icon" 
-                        alt="Telegram">
-                    <a href="https://t.me/erastudio" class="contact-link" target="_blank">@erastudio</a>
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.18.18 0 00-.07-.2c-.08-.06-.19-.04-.28-.02-.12.02-1.96 1.25-5.54 3.69-.52.36-1 .53-1.43.52-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.41-.89.03-.24.28-.49.76-.74 2.95-1.29 4.92-2.14 5.91-2.56 2.81-1.17 3.39-1.37 3.77-1.38.08 0 .27.02.39.12.1.08.13.19.14.27z" fill="#888888"/>
+                    </svg>
+                    <a href="https://t.me/andrew_the_show" class="contact-link" target="_blank" rel="noopener noreferrer">@andrew_the_show </a>
                 </div>
-                    
-                    <div class="contact-item">
-                        <img src="data:image/svg+xml,%3Csvg xmlns='https://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23888888' d='M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z'/%3E%3C/svg%3E" 
-                             class="contact-icon" 
-                             alt="Phone">
-                        <a href="tel:+79991234567" class="contact-link">+7 (999) 123-45-67</a>
-                    </div>
+
+                <div class="contact-item">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="#888888"/>
+                    </svg>
+                    <a href="tel:+79154314704" class="contact-link">+7 (915) 431-47-04</a>
+                </div>
                 </div>
 
 
@@ -6507,19 +6730,19 @@
             <div class="footer-column fade-in" style="animation-delay: 0.3s">
                 <h3>На биржах</h3>
                 <div class="platform-item">
-                    <a href="https://kwork.ru/user/erastudio" class="platform-link" target="_blank">
+                    <a href="https://kwork.ru/user/erastudio" class="platform-link" target="_blank" rel="noopener noreferrer">
                         Kwork
                         <span class="platform-arrow">→</span>
                     </a>
                 </div>
                 <div class="platform-item">
-                    <a href="https://freelance.habr.com/freelancers/erastudio" class="platform-link" target="_blank">
+                    <a href="https://freelance.habr.com/freelancers/erastudio" class="platform-link" target="_blank" rel="noopener noreferrer">
                         Avito
                         <span class="platform-arrow">→</span>
                     </a>
                 </div>
                 <div class="platform-item">
-                    <a href="https://www.fl.ru/users/erastudio" class="platform-link" target="_blank">
+                    <a href="https://www.fl.ru/users/erastudio" class="platform-link" target="_blank" rel="noopener noreferrer">
                         FL.ru
                         <span class="platform-arrow">→</span>
                     </a>
@@ -6535,7 +6758,7 @@
                 © 2024 ERA Studio. Все права защищены.
             </div>
             
-            <a class="back-to-top" aria-label="Наверх" href="#header"></a>
+            <a class="back-to-top" aria-label="Вернуться наверх" href="#header"></a>
         </div>
 
         <!-- Декоративные элементы -->
@@ -6749,15 +6972,11 @@ function sendToTelegram(data) {
             }, 500);
         });
         
-        // Обработка ошибок
-        modelViewer.addEventListener('error', () => {
-            console.error('Ошибка загрузки 3D модели');
-        });
-
+        // Тихий перебор путей — без console.error на промежуточные 404
         let attempts = 0;
         const modelPaths = [
-            'david_head.glb',
             'img/david_head.glb',
+            'david_head.glb',
             'assets/david_head.glb',
             'models/david_head.glb'
         ];
@@ -6770,6 +6989,7 @@ function sendToTelegram(data) {
             if (attempts >= modelPaths.length) {
                 loader.style.display = 'none';
                 errorMessage.style.display = 'flex';
+                console.error('Ошибка загрузки 3D модели: файл не найден ни по одному из путей');
                 return;
             }
             modelViewer.src = modelPaths[attempts];
@@ -6796,7 +7016,8 @@ function sendToTelegram(data) {
         });
 
         modelViewer.addEventListener('error', () => {
-            setTimeout(tryLoadModel, 800);
+            // Тихий retry — не логируем промежуточные 404
+            setTimeout(tryLoadModel, 500);
         });
 
         modelViewer.addEventListener('progress', (ev) => {
@@ -8259,3 +8480,5 @@ faqStyles.textContent = `
 `;
 document.head.appendChild(faqStyles);
 </script>
+</body>
+</html>
